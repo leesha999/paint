@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>My Paint</title>
+<link rel="stylesheet" type="text/css" href="C81style.css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body class="body_backgorund">
+	<nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">My Paint</a>
+</div>
+
+<div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+        <li><a href="#welcome">HOME</a></li>
+        <li><a href="#videos">VIDEOS</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#tipsandtricks">Tip 'n' Trick</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</div>
+</nav>
+
+<div align="left">
+	<h1>My First Canvas</h1>
+	<canvas id="myCanvas" width="800" height="600"></canvas>
+	<script src="C81main.js"></script>
+	<br> <br>
+</div>
+<div align ="center">
+	<span>Colour -		
+	</span>
+	<input type="text" id="color">		
+	<span id="span">Width</span> 
+	<button onclick="subWidth()" class="width_button" id="subtract">-</button> 	
+    <label id="width">1</label>
+	<button onclick="addWidth()" class="width_button" id="add">+</button>    
+    <hr> 
+</div>
+<div align ="center">
+	<button onclick="clearArea()" id="clear">Clear</button>
+</div>
+
+<section id="videos">
+   <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="books">
+  <h2 class="text-capitalize">videos</h2>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <h3>Leonardo da vinci</h3>
+  <h4>
+    <mark class="header_euntrepreneuor">
+      <i>
+        <sup>
+          <i class="fa fa-quote-left"></i>
+        </sup> The artists sees what others only catch a glimpse of
+        <sup><i class="fa fa-quote-right"></i></sup>
+      </i>
+    </mark>
+  </h4>
+</div>
+<div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h2 class="text-capitalize ">List of Videos For Learning Digital Art</h2>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#How_Digital_Art">
+<img src="V1.PNG" class="img-responsive">
+<hr>
+<p class="text-primary">How To Make Digital Art</p>
+</div>
+<div class="modal fade" id="#How_Digital_Art">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">How to Make Digital Art</h4>
+      </div>
+      <div class="modal-body">
+         <iframe width="885" height="498" src="https://www.youtube.com/embed/0RmGV5wALG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>          
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#How_Digital_Art1">
+<img src="v2.PNG" class="img-responsive">
+<hr>
+<p class="text-primary">Make Your First Digital Illustration</p>
+</div>
+<div class="modal fade" id="#How_Digital_Art1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Make Your First Digital Illustration</h4>
+      </div>
+      <div class="modal-body">
+        <iframe height="500" src="https://youtu.be/5pmIYH1ugtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video2" ></iframe><br>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+  <iframe width="885" height="498" src="https://www.youtube.com/embed/0RmGV5wALG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
